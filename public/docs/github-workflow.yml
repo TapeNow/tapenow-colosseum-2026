@@ -1,0 +1,31 @@
+# Place this in .github/workflows/deweb-build.yml in YOUR website repository.
+# Only produces a build artifact; never deploys or signs blockchain transactions.
+name: DeWeb static build
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Ensure a static entry point
+        run: test -f dist/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deweb-dist
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7

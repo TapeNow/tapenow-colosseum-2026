@@ -1,0 +1,3 @@
+.agent-status{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;font-size:12px;color:var(--text-secondary,#687076)}.agent-status a{margin-left:auto;color:inherit;text-underline-offset:3px}.agent-review code{overflow-wrap:anywhere}.agent-review .notice{display:block}.agent-review .checkbox-label{align-items:flex-start}.agent-review input[type=checkbox]{flex:0 0 auto}@media(max-width:600px){.agent-status{gap:8px}.agent-status>span{flex:1;min-width:180px}.agent-status a{margin-left:0}}
+
+.agent-review-details{white-space:pre-wrap;overflow-wrap:anywhere;max-height:280px;overflow:auto;padding:12px;font-size:11px;background:#f6f7f8;border:1px solid #ddd;border-radius:6px}

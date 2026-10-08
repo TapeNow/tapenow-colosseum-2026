@@ -1,0 +1,99 @@
+<!doctype html>
+<html data-brand-document lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TapeNow · Fees explained</title>
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#18302e;background:#f8faf9;line-height:1.7}
+    body{margin:0}main{max-width:880px;margin:auto;padding:36px 24px 80px}
+    h1{font-size:clamp(28px,5vw,44px);line-height:1.2}h2{margin-top:34px;font-size:23px}
+    a{color:#087566;overflow-wrap:anywhere}code{background:#eaf0ed;border-radius:5px;padding:3px 6px;overflow-wrap:anywhere}
+    nav{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}select{font:inherit;padding:6px}
+    aside{border-left:4px solid #2b9989;padding:12px 18px;background:#eaf4f0}
+    html[data-language=en] .zh,html[data-language=zh-CN] .en{display:none}
+    li{margin:12px 0}table{border-collapse:collapse;width:100%;table-layout:fixed}
+    td,th{border:1px solid #d8e1dc;text-align:left;padding:12px;overflow-wrap:anywhere}
+    caption{text-align:left;margin:12px 0}footer{border-top:1px solid #d8e1dc;margin-top:36px;padding-top:20px}
+    @media(max-width:500px){main{padding:24px 18px}td,th{padding:8px;font-size:14px}}
+  </style>
+  <script>const requested=new URLSearchParams(location.search).get('lang');let selected='en';try{if(localStorage.getItem('tapenow.language')==='zh-CN')selected='zh-CN'}catch{}if(requested==='en'||requested==='zh-CN')selected=requested;document.documentElement.dataset.language=selected;document.documentElement.lang=selected;document.title=selected==='en'?'TapeNow · Fees explained':'TapeNow · 费用说明';</script>
+<link rel="icon" type="image/svg+xml" href="/brand/v2/favicon.svg"><link rel="stylesheet" href="/brand/v2/theme.css"><link rel="stylesheet" href="/brand/v2/document.css"></head>
+<body><style>html[lang="en"] .review-copy-zh,html[lang="zh-CN"] .review-copy-en{display:none}</style><aside data-review-copy="hosted-reference" style="padding:12px;border:1px solid #087f76"><span class="review-copy-en">Curated review copy: this page references the full hosted TapeNow service. Hosted sign-in, password previews and origin-trial WebMCP are not configured in the local app. Local import, loopback preview, recovery and export remain available. See the included README for scope.</span><span class="review-copy-zh">精选审阅副本：本页包含完整 TapeNow 云端服务的说明。本地应用未配置云端登录、密码预览或 origin-trial WebMCP；本地导入、loopback 预览、恢复与导出可用。具体范围见随附 README。</span></aside><main>
+  <nav><a class="document-brand" href="/" aria-label="TapeNow"><img src="/brand/v2/lockup-light.svg" width="168" height="46" alt="TapeNow"></a><label>语言 / Language <select id="lang"><option value="zh-CN">简体中文</option><option value="en">English</option></select></label></nav>
+  <section class="zh" lang="zh-CN">
+    <h1>费用花在哪里，付给谁？</h1>
+    <p>核对日期：2026-09-28。以下是上游当日价格说明，不是 TapeNow 的套餐报价，也不是永久价格承诺。操作前以所选链的最新报价、钱包确认和交易回执为准。</p>
+    <aside><strong>Base 的 0.0012 ETH／30 天激活费，不是 TapeNow 收取的平台服务费。</strong>钱包把这笔钱直接支付给 TapeKit 使用的上游 DomainBinding（域名绑定）合约。TapeNow 不代收、不对这笔协议激活费加价；gas 另计。</aside>
+    <h2>先分清几笔钱</h2>
+    <ul>
+      <li><strong>交易 gas：</strong>支付给所在区块链网络，用于执行交易。BSC 使用 BNB，X Layer 使用 OKB，Base 使用 ETH；Base 还包含 L1 数据等网络费用。失败的交易也可能消耗 gas。</li>
+      <li><strong>上游协议费用：</strong>芯片流片、容器开通、网站地址激活等是不同操作，各自按上游合约定价。激活费发送给上游域名绑定合约，不属于 TapeNow 平台收费，也不包含前两项费用。</li>
+      <li><strong>云服务和域名：</strong>你自己连接的 Cloudflare、Supabase、GitHub 等按各自套餐计费；购买及续费普通域名的钱付给域名注册商。TapeNow 提供的测试资源另有用量限制，不能理解为供应商资源无限免费。</li>
+      <li><strong>TapeNow 平台费：</strong>不要把钱包里的上述 gas 和协议转账记成 TapeNow 服务费。本文没有新增 TapeNow 收费项目，也不替代未来平台套餐的独立说明。</li>
+    </ul>
+    <h2>三条链的原生地址激活费</h2>
+    <table>
+      <caption>只比较地址激活这一项，不是发布网站的全部成本；均不含 gas。</caption>
+      <thead><tr><th scope="col">网络</th><th scope="col">上游激活费</th><th scope="col">有效期说明</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">BSC</th><td>0 BNB</td><td>官方当前说明为 10 年，可免服务费延期；交易仍需 gas。</td></tr>
+        <tr><th scope="row">X Layer</th><td>0.026 OKB／30 天</td><td>维持访问需要有效的激活记录，到期需另行处理。</td></tr>
+        <tr><th scope="row">Base</th><td>0.0012 ETH／30 天</td><td>维持访问需要有效的激活记录，到期需另行处理。</td></tr>
+      </tbody>
+    </table>
+    <p>当日通过每条链的两个独立 RPC 读取 <code>monthlyFee()</code>，分别得到上述费用。BSC 的期限和免服务费延期说明来自 <a href="https://hashport.ai/terms.html">HashPort 官方条款</a>；该条款介绍的是 BSC，不能拿它当作 X Layer 或 Base 也免费的依据。已有站点实际何时到期，仍以链上记录为准。</p>
+    <h2>用 TapeNow Gateway，为什么还会看到激活费？</h2>
+    <p>Gateway 为已有链上网站提供普通 HTTPS 入口，但当前版本仍检查上游容器和地址是否有效。使用 Gateway 不会免除底层协议的激活要求。这不等于 HashPort 已经支持 X Layer 或 Base 托管：TapeNow Gateway 是独立的访问服务。</p>
+    <p>访客打开网站不需要钱包，也不用为每次访问付 gas。发布者的新建、写入、更新和激活交易可能产生费用。Gateway 的持有人消息签名只证明归属，本身不是付款交易。</p>
+    <h2>30 天到了，会发生什么？</h2>
+    <p>到期的是协议的访问资格，不是你的普通域名被收回，也不表示历史链上字节消失。原生入口及 TapeNow Gateway 可能停止提供访问；延长激活、重新核验后才能恢复。TapeNow 当前不会自动扣款续期。BSC 即使免激活服务费，也仍需保持有效的链上记录。</p>
+    <h2>可以自己核对收款地址吗？</h2>
+    <p>可以。下面是 TapeNow 当前适配的上游 DomainBinding 合约；务必同时核对网络，不能只看地址：</p>
+    <ul>
+      <li>BSC：<a href="https://bscscan.com/address/0x861ee183de2bbe4a6ecf9d15812c123b566a3db7"><code>0x861ee183de2bbe4a6ecf9d15812c123b566a3db7</code></a></li>
+      <li>X Layer：<a href="https://www.oklink.com/xlayer/address/0x68809fd2fb343aa57d0aeb7f33defe477c9666f9"><code>0x68809fd2fb343aa57d0aeb7f33defe477c9666f9</code></a></li>
+      <li>Base：<a href="https://basescan.org/address/0x68809fd2fb343aa57d0aeb7f33defe477c9666f9"><code>0x68809fd2fb343aa57d0aeb7f33defe477c9666f9</code></a></li>
+    </ul>
+    <p><a href="https://basescan.org/tx/0xfd728d9388a3ba88c70c1d4eef23dfca52e49813c636ad75acf289c3ac46e02c">Base 实际激活交易示例</a>：转账金额为 0.0012 ETH，交易 gas 单独计算。它能证明直接收款合约，不能仅凭这条交易判断资金最终提现给了哪个个人或公司。</p>
+    <footer><a href="/docs/gateway.html">Gateway 使用指南</a> · <a href="/docs/integrations.html">服务接入说明</a> · <a href="/docs/terms.html">测试条款</a></footer>
+  </section>
+  <section class="en" lang="en">
+    <h1>What costs money, and who receives it?</h1>
+    <p>Checked on 28 September 2026. These are upstream prices observed on that date, not a TapeNow pricing plan or a promise of permanent rates. Review the selected chain's current quote, wallet confirmation and transaction receipt before paying.</p>
+    <aside><strong>The Base activation fee of 0.0012 ETH per 30 days is not a TapeNow platform fee.</strong> Your wallet pays the upstream DomainBinding contract used by TapeKit directly. TapeNow neither collects nor marks up this protocol activation fee. Network gas is separate.</aside>
+    <h2>Separate the costs</h2>
+    <ul>
+      <li><strong>Network gas:</strong> paid to the blockchain for transaction execution. BSC uses BNB, X Layer uses OKB and Base uses ETH. Base also includes L1 data and other network fees. Failed transactions may still consume gas.</li>
+      <li><strong>Upstream protocol fees:</strong> chip creation, container opening and site-address activation are separate operations with their own contract prices. Activation value goes to the upstream binding contract, not TapeNow, and does not include chip or container costs.</li>
+      <li><strong>Cloud services and domains:</strong> your connected Cloudflare, Supabase and GitHub accounts follow their own plans. Ordinary domain registration and renewal are paid to your registrar. TapeNow test resources also have usage limits; provider resources are not unlimited or universally free.</li>
+      <li><strong>TapeNow platform fees:</strong> do not classify the network and protocol transfers above as TapeNow service charges. This document introduces no new TapeNow charge and does not replace a separate explanation of any future platform plan.</li>
+    </ul>
+    <h2>Native site-address activation on each chain</h2>
+    <table>
+      <caption>Activation only, not the total cost of publishing a website. Gas is excluded in all cases.</caption>
+      <thead><tr><th scope="col">Network</th><th scope="col">Upstream activation fee</th><th scope="col">Validity</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">BSC</th><td>0 BNB</td><td>Official terms currently state 10 years with no service fee to extend. Transactions still need gas.</td></tr>
+        <tr><th scope="row">X Layer</th><td>0.026 OKB per 30 days</td><td>An active on-chain record is required. Handle expiry separately.</td></tr>
+        <tr><th scope="row">Base</th><td>0.0012 ETH per 30 days</td><td>An active on-chain record is required. Handle expiry separately.</td></tr>
+      </tbody>
+    </table>
+    <p>We read <code>monthlyFee()</code> through two independent RPC providers per chain on the date above. BSC validity and fee-free extension are described in the <a href="https://hashport.ai/terms.html">official HashPort terms</a>. Those terms describe BSC and do not establish free activation on X Layer or Base. An existing site's actual expiry remains its on-chain value.</p>
+    <h2>Why does TapeNow Gateway still require activation?</h2>
+    <p>Gateway provides an ordinary HTTPS entry for an existing on-chain website. The current release still checks upstream container and address validity, so Gateway does not waive protocol activation requirements. This does not mean HashPort offers X Layer or Base hosting: TapeNow Gateway is a separate access service.</p>
+    <p>Visitors need neither a wallet nor gas for each visit. Publishers may pay for creation, writes, updates and activation. Gateway's ownership message signature proves control and is not itself a payment transaction.</p>
+    <h2>What happens after 30 days?</h2>
+    <p>Protocol access eligibility expires; your ordinary domain is not taken away and historical on-chain bytes do not disappear. The native entry and TapeNow Gateway may stop serving the site until activation is extended and verified again. TapeNow does not automatically charge for renewal. Even on BSC, where the activation service fee is zero, an active on-chain record is still required.</p>
+    <h2>Can I check the recipient?</h2>
+    <p>Yes. These are the upstream DomainBinding contracts currently used by TapeNow. Check both the network and address:</p>
+    <ul>
+      <li>BSC: <a href="https://bscscan.com/address/0x861ee183de2bbe4a6ecf9d15812c123b566a3db7"><code>0x861ee183de2bbe4a6ecf9d15812c123b566a3db7</code></a></li>
+      <li>X Layer: <a href="https://www.oklink.com/xlayer/address/0x68809fd2fb343aa57d0aeb7f33defe477c9666f9"><code>0x68809fd2fb343aa57d0aeb7f33defe477c9666f9</code></a></li>
+      <li>Base: <a href="https://basescan.org/address/0x68809fd2fb343aa57d0aeb7f33defe477c9666f9"><code>0x68809fd2fb343aa57d0aeb7f33defe477c9666f9</code></a></li>
+    </ul>
+    <p><a href="https://basescan.org/tx/0xfd728d9388a3ba88c70c1d4eef23dfca52e49813c636ad75acf289c3ac46e02c">An actual Base activation transaction</a> sends 0.0012 ETH, with gas charged separately. It identifies the immediate recipient contract, not the eventual individual or company withdrawing funds.</p>
+    <footer><a href="/docs/gateway.html">Gateway guide</a> · <a href="/docs/integrations.html">Integration guide</a> · <a href="/docs/terms.html">Testing terms</a></footer>
+  </section>
+</main><script>const s=document.getElementById('lang');s.value=document.documentElement.lang;s.addEventListener('change',()=>{document.documentElement.dataset.language=s.value;document.documentElement.lang=s.value;document.title=s.value==='en'?'TapeNow · Fees explained':'TapeNow · 费用说明';try{localStorage.setItem('tapenow.language',s.value)}catch{}});</script></body>
+</html>

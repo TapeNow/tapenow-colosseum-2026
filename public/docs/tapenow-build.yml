@@ -1,0 +1,53 @@
+name: TapeNow Build
+run-name: TapeNow ${{ inputs.job_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      job_id: {required: true, type: string}
+      source_sha: {required: true, type: string}
+      root_directory: {required: true, type: string, default: '.'}
+      output_directory: {required: true, type: string, default: 'dist'}
+      build_command: {required: true, type: string, default: 'npm run build'}
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ inputs.source_sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Build the selected source
+        env:
+          BUILD_ROOT: ${{ inputs.root_directory }}
+          BUILD_COMMAND: ${{ inputs.build_command }}
+        run: |
+          cd -- "$BUILD_ROOT"
+          if test -f package-lock.json; then npm ci; elif test -f package.json; then npm install; fi
+          bash -e -o pipefail -c "$BUILD_COMMAND"
+      - name: Write source record
+        env:
+          BUILD_ROOT: ${{ inputs.root_directory }}
+          BUILD_OUTPUT: ${{ inputs.output_directory }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          JOB_ID: ${{ inputs.job_id }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const output=path.resolve(process.env.BUILD_ROOT,process.env.BUILD_OUTPUT);
+          if(!output.startsWith(process.cwd()+path.sep) && output!==process.cwd())throw Error('Output escapes checkout');
+          if(!fs.existsSync(path.join(output,'index.html')))throw Error('Not a static website: index.html is missing');
+          fs.writeFileSync(path.join(output,'tapenow-build.json'),JSON.stringify({jobId:process.env.JOB_ID,commit:process.env.SOURCE_SHA}));
+          JS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: deweb-dist-${{ inputs.job_id }}
+          path: ${{ inputs.root_directory }}/${{ inputs.output_directory }}
+          if-no-files-found: error
+          retention-days: 3

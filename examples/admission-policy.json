@@ -1,0 +1,9 @@
+{
+  "note": "Documentation reference values as of 2026-10-08, not a deployment configuration or available seat count.",
+  "vars": {
+    "SIGNUP_MODE": "open",
+    "WALLET_LOGIN": "true",
+    "SIGNUP_DAILY_LIMIT": "50",
+    "SIGNUP_TOTAL_LIMIT": "300"
+  }
+}

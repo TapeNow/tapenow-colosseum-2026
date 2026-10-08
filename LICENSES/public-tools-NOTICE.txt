@@ -1,0 +1,8 @@
+TapeNow public tools and specifications
+Copyright 2026 TapeNow
+
+This product includes software and documentation licensed under the Apache
+License, Version 2.0 (see LICENSE).
+
+The TapeNow name, logos and brand assets are trademarks of TapeNow and are not
+licensed under the Apache License (see TRADEMARKS.md).

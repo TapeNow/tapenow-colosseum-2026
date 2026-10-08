@@ -1,0 +1,11 @@
+/* TapeNow brand kit v2. Fold lettering is an SVG asset, not a body font. */
+@font-face{font-family:TN Space;src:url('./fonts/space-grotesk-latin.woff2') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:TN Sans SC;src:url('./fonts/noto-sans-sc-ui.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+:root{
+  --tn-ink:#142c2d;--tn-sea:#087f76;--tn-mint:#52d8c4;--tn-coral:#ff8b8d;--tn-rose:#b43f50;
+  --tn-paper:#f5f5ee;--tn-white:#fff;--tn-night:#0f2426;--tn-surf:#d8f4e8;--tn-sand:#f6e3a4;
+  --tn-muted:#526666;--tn-line:#cbd5cf;--tn-dark-muted:#b0c7c2;--tn-dark-line:#355354;
+  --tn-font:'TN Space','TN Sans SC',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;
+  --tn-mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+  --tn-radius-ui:6px;--tn-radius-card:12px;--tn-ease:cubic-bezier(.2,.7,.2,1);
+}

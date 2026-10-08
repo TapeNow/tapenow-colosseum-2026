@@ -1,0 +1,9 @@
+# Rights, notices and upstream attribution
+
+The source repository states: “Proprietary. © 2026 TapeNow. All rights reserved. This private repository is not licensed for redistribution.” This local curated copy does not alter that status or grant an open-source license to the workbench. External sharing and any reviewer access terms remain subject to the owner's specific approval. This notice is a scope disclosure, not a newly granted license.
+
+Existing TapeNow public-tools terms are retained in `LICENSES/Apache-2.0-public-tools.txt`, `LICENSES/public-tools-NOTICE.txt` and `LICENSES/TRADEMARKS.md`. Their scope here is the existing public tools copied under `public/tools/` and `public/sdk/`; those files were already identified for the separate public tools distribution. Those terms do not relicense `src/`, `server/`, `cloud/`, the entire review package or TapeNow trademarks. The original notice wording is preserved in its scoped directory.
+
+Font licensing and provenance are preserved under `public/brand/v2/fonts/`: Space Grotesk and Noto Sans SC use the SIL Open Font License, with full notices and source/hash metadata. TapeNow names/logos remain TapeNow marks. npm dependency licenses are supplied by each package and reflected in the lockfile; no dependency source tree is bundled into this package.
+
+Upstream TapeOut provides protocol contracts, processor chips and DeWeb containers; TapeKit provides native retrieval. TapeNow's contribution is the approachable release workflow and integration code, not those upstream systems. Source references such as `okxlabs/okx-smart-wallet-evm@be890c49aee80b96b910b6dd13f47b24f16f04f0` in `server/wallet-transactions.mjs` remain intact. This adapter is not a claim to authorship of the OKX wallet implementation. The upstream codebase/contracts are not bundled here.

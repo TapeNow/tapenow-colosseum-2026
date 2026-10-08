@@ -1,0 +1,21 @@
+/* Shared presentation only: existing document content and locale logic stay intact. */
+html[data-brand-document]{background:var(--tn-paper);color:var(--tn-ink);font-family:var(--tn-font)}
+html[data-brand-document] body{margin:0;background:var(--tn-paper);color:var(--tn-ink);font-family:var(--tn-font);line-height:1.75}
+html[data-brand-document] main{max-width:920px;margin:auto}
+html[data-brand-document] h1{font-family:var(--tn-font);font-weight:600;letter-spacing:-.035em;line-height:1.35}
+html[data-brand-document] h2,html[data-brand-document] h3{font-family:var(--tn-font);color:var(--tn-ink);line-height:1.4}
+html[data-brand-document] a{color:var(--tn-sea);text-underline-offset:4px;overflow-wrap:anywhere}
+html[data-brand-document] a:focus-visible,html[data-brand-document] select:focus-visible{outline:3px solid var(--tn-sea);outline-offset:4px}
+html[data-brand-document] nav{align-items:center;gap:16px}
+.document-brand{display:inline-flex;align-items:center;flex:0 0 auto;line-height:0}
+.document-brand img{display:block;width:168px;max-width:100%;height:auto}
+.document-brand-header{padding:0 0 22px;margin:0 0 26px;border-bottom:1px solid var(--tn-line)}
+html[data-brand-document] aside,html[data-brand-document] .note{background:#e7f6ed;border-color:var(--tn-sea);color:var(--tn-ink);border-radius:var(--tn-radius-ui)}
+html[data-brand-document] th{background:#eaf2ea;color:var(--tn-ink)}
+html[data-brand-document] th,html[data-brand-document] td{border-color:var(--tn-line);overflow-wrap:anywhere}
+html[data-brand-document] code{background:#eaf0e9;color:var(--tn-ink);overflow-wrap:anywhere}
+html[data-brand-document] pre{background:var(--tn-night);color:var(--tn-paper);padding:20px;border-radius:var(--tn-radius-card);overflow:auto;max-width:100%}
+html[data-brand-document] pre code{background:none;color:inherit}
+html[data-brand-document] footer{border-color:var(--tn-line);color:var(--tn-muted)}
+html[data-brand-document] select,html[data-brand-document] button{font-family:inherit;border-radius:var(--tn-radius-ui)}
+@media(max-width:600px){html[data-brand-document] main{padding:24px 18px 60px}.document-brand img{width:156px}html[data-brand-document] h1{font-size:28px}.document-brand-header{margin-bottom:20px}}

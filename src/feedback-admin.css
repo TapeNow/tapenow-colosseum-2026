@@ -1,0 +1,24 @@
+.feedback-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.feedback-tab{display:inline-flex;align-items:center;gap:8px;min-height:34px;padding:6px 12px;border:1px solid var(--border,#dfe3e1);border-radius:999px;background:var(--surface,#fff);color:inherit;font:inherit;font-size:13px;cursor:pointer}
+.feedback-tab span{min-width:20px;padding:1px 7px;border-radius:999px;background:var(--surface-muted,#eef2f0);font-size:11px;text-align:center}
+.feedback-tab.active{border-color:#167d84;background:#e9f6f4;color:#0f5f64;font-weight:600}
+.feedback-tab:focus-visible,.feedback-category select:focus-visible{outline:2px solid #167c8d;outline-offset:2px}
+.feedback-category{display:inline-flex;align-items:center;gap:8px;margin-left:auto;font-size:12px}
+.feedback-category select{min-height:34px;border:1px solid var(--border,#dfe3e1);border-radius:6px;background:var(--surface,#fff);padding:4px 8px;font:inherit}
+.feedback-empty{display:flex;align-items:center;gap:10px;padding:28px 0}
+.feedback-item{display:grid;gap:12px;padding:22px 0;border-bottom:1px solid var(--border,#eee);min-width:0}
+.feedback-item:last-child{border-bottom:0}
+.feedback-item header{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:13px}
+.feedback-item header strong{overflow-wrap:anywhere}
+.feedback-item header .badge:last-child{margin-left:auto}
+.feedback-message{margin:0;font-size:14px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+.feedback-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0;padding:12px;border-radius:8px;background:var(--surface-muted,#f5f7f6);font-size:12px}
+.feedback-meta div{min-width:0}.feedback-meta .wide{grid-column:1/-1}
+.feedback-meta dt{color:var(--text-secondary,#68747e);margin-bottom:3px}
+.feedback-meta dd{margin:0;overflow-wrap:anywhere}
+.feedback-item details{font-size:12px}
+.feedback-item summary{cursor:pointer;color:var(--text-secondary,#68747e)}
+.feedback-ua{margin:8px 0 0;overflow-wrap:anywhere}
+.feedback-item .button-row{display:flex;flex-wrap:wrap;gap:8px}
+.feedback-more{justify-self:center}
+@media(max-width:700px){.feedback-meta{grid-template-columns:repeat(2,minmax(0,1fr))}.feedback-category{margin-left:0}.feedback-item header .badge:last-child{margin-left:0}}

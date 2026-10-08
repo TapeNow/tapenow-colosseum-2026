@@ -1,0 +1,122 @@
+.oauth-accounts {
+  padding: 0 22px 16px;
+  grid-column: 1/-1;
+}
+.oauth-accounts .panel-heading {
+  padding-left: 0;
+  padding-right: 0;
+}
+.oauth-accounts h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.oauth-accounts > p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.oauth-account-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.oauth-account-row > div:first-child {
+  flex: 1;
+  min-width: 160px;
+}
+.oauth-account-row small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.oauth-revoke-confirm {
+  flex-basis: 100%;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.oauth-revoke-confirm p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+.oauth-revoke-confirm button + button {
+  margin-left: 8px;
+}
+.oauth-connect .oauth-permissions {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.oauth-error {
+  padding: 10px 12px;
+  border: 1px solid #df7769;
+  border-radius: 8px;
+  color: #9a3a2f;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.oauth-success {
+  padding: 10px 12px;
+  border: 1px solid #60ad94;
+  border-radius: 8px;
+  color: #226d55;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.oauth-divider {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.oauth-authorize {
+  justify-content: center;
+}
+.oauth-connect select {
+  max-width: 100%;
+}
+.oauth-connect .modal-actions {
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .oauth-accounts {
+    padding: 0 14px 12px;
+  }
+  .oauth-account-row {
+    align-items: flex-start;
+  }
+  .oauth-account-row .button-row {
+    flex-basis: 100%;
+  }
+  .oauth-connect .modal-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+.oauth-advanced {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.oauth-advanced summary {
+  cursor: pointer;
+  color: var(--muted);
+}
+.oauth-advanced[open] summary {
+  margin-bottom: 8px;
+}
+.oauth-advanced p {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.7;
+}

@@ -1,0 +1,9 @@
+{
+  "sourceSHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+  "sourceCommit": "23e54b51ddffbc7713c583748e3bd86f62b1fa4a",
+  "requestedCodepoints": 958,
+  "glyphs": 956,
+  "bytes": 240496,
+  "sha256": "b260f490b1fe6607168c02ad9c4bc1ee117be3d6e15b1cc3ecb8e90c75076323",
+  "note": "UI/document subset; arbitrary user content may use system font fallback."
+}
