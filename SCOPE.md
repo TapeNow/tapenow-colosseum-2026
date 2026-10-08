@@ -1,6 +1,6 @@
-# Proposed review scope — 2026-10-08, revision 2
+# Curated review scope — 2026-10-08, revision 2
 
-Prepared locally for owner review. No upload, repository creation, permission change, push, PR, merge or deployment is part of this export phase.
+This curated copy was published with owner approval on **2026-10-08**. Publication does not expand the reviewed file scope, change rights or licenses, or make this a complete hosted production deployment.
 
 The source allowlist was selected before copying. Every selected text file was scanned for internal identity/host strings, email addresses, credential signatures, URL destinations and long identifiers; flagged constants were reviewed. Relative module imports were traced to retain runnable dependencies. A gateway test that pulled in private backup operations was excluded rather than carrying the operations tree into the package.
 

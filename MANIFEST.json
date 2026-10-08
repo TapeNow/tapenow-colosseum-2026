@@ -40,23 +40,23 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 1831,
-      "sha256": "9bb76aa7dee8efcbf124c323c26de4a503397eb0873eb4903ae3a301ed1dc846"
+      "bytes": 1882,
+      "sha256": "d7e97a5ede6c5d079d8cfb884bdd44e8bd81a9b55a4a72fe1c7671d8c9cc6e1f"
     },
     {
       "path": "README.md",
-      "bytes": 5248,
-      "sha256": "8d993e325cb82bb5e2b92b33999b7c11172cf53b801a8a75571ccfb9613e752d"
+      "bytes": 5442,
+      "sha256": "66341ec19418bc9e2682d2b4623672a82860f694b3019fed6b37c259ca802b62"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 3242,
-      "sha256": "e2627495f21ca75e744efc8530473d7e365b1e4a7e1f5a7277182c30cfd15091"
+      "bytes": 3482,
+      "sha256": "87d8a5d47bea23c991e8fa032566334020657e8dbade068f6f4f37d2de5c765a"
     },
     {
       "path": "SCOPE.md",
-      "bytes": 5772,
-      "sha256": "b0f66e80502a2d0636aa0813f8a5c7b008daeb4a062a4c174a07285549d95de0"
+      "bytes": 5830,
+      "sha256": "79b5053bb5efe12a89a7702fa284fb33ad975b863cdbad46fe18b153f30cde3e"
     },
     {
       "path": "VALIDATION.md",

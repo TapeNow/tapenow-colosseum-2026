@@ -1,6 +1,6 @@
 # TapeNow — curated competition review copy
 
-Prepared **2026-10-08**, review-package **revision 2**, from TapeNow **0.9.16**, source snapshot `07eefe8828e3215ea53694feff854c1ac9c66c4d` (reviewed product base `4fb1603124bdba4a0edc53a63f555e559390af55`). This is a local review package awaiting owner approval for external sharing. It contains actual React workbench and Express implementation source, not just a tools SDK. It is **not the complete hosted service**, a production deployment kit, or a newly licensed open-source release.
+Prepared **2026-10-08**, review-package **revision 2**, from TapeNow **0.9.16**, source snapshot `07eefe8828e3215ea53694feff854c1ac9c66c4d` (reviewed product base `4fb1603124bdba4a0edc53a63f555e559390af55`). This curated review copy was published with owner approval on **2026-10-08**. It contains actual React workbench and Express implementation source, not just a tools SDK. It is **not the complete hosted service**, a production deployment kit, or a newly licensed open-source release.
 
 [中文说明](README.zh-CN.md) · [Scope and exclusions](SCOPE.md) · [Contribution dates](CONTRIBUTIONS.md) · [Demo](DEMO.md) · [Validation](VALIDATION.md) · [Rights and attribution](NOTICE.md)
 
@@ -43,4 +43,4 @@ Use `scripts/verify-release.mjs` with an independently trusted signing-key finge
 
 Earliest retained product/build records are dated **September 25, 2026**. The **October 1 UTC Git import already contained 0.9.7**. The exact original start and a pre-September-14 baseline are unconfirmed. This package makes no claim that all functionality was created during a judging window. No independent human-user study or customer traction is asserted.
 
-`EXPORT-SCOPE.json` is the explicit source-file allowlist with original hashes and adaptation status. `MANIFEST.json` hashes the complete curated payload, excluding only itself and its checksum. Run `npm run verify:manifest` to check the listed payload hashes; the accompanying archive checksum is supplied separately. Hashes show package integrity, not originality or an external audit.
+`EXPORT-SCOPE.json` is the explicit source-file allowlist with original hashes and adaptation status. `MANIFEST.json` hashes the complete curated payload, excluding only itself and its checksum. Run `npm run verify:manifest` in a clean exported tree, such as an extracted GitHub Download ZIP or `git archive`, before installing dependencies or running the app/tests. Do not run it in a clone containing `.git` or a tree with generated runtime artifacts. The accompanying archive checksum is supplied separately. Hashes show package integrity, not originality or an external audit.

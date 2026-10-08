@@ -1,6 +1,6 @@
 # Rights, notices and upstream attribution
 
-The source repository states: “Proprietary. © 2026 TapeNow. All rights reserved. This private repository is not licensed for redistribution.” This local curated copy does not alter that status or grant an open-source license to the workbench. External sharing and any reviewer access terms remain subject to the owner's specific approval. This notice is a scope disclosure, not a newly granted license.
+The source repository states: “Proprietary. © 2026 TapeNow. All rights reserved. This private repository is not licensed for redistribution.” This curated copy does not alter that status or grant an open-source license to the workbench. This curated copy was published with the owner's specific approval on 2026-10-08. That approval does not change the rights or license terms stated here. This notice is a scope disclosure, not a newly granted license.
 
 Existing TapeNow public-tools terms are retained in `LICENSES/Apache-2.0-public-tools.txt`, `LICENSES/public-tools-NOTICE.txt` and `LICENSES/TRADEMARKS.md`. Their scope here is the existing public tools copied under `public/tools/` and `public/sdk/`; those files were already identified for the separate public tools distribution. Those terms do not relicense `src/`, `server/`, `cloud/`, the entire review package or TapeNow trademarks. The original notice wording is preserved in its scoped directory.
 

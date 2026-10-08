@@ -1,6 +1,6 @@
 # TapeNow · 参赛精选审阅副本
 
-准备日期：**2026-10-08**，审阅包 **修订 2**。版本 **0.9.16**，源快照 `07eefe8828e3215ea53694feff854c1ac9c66c4d`，产品审阅基线 `4fb1603124bdba4a0edc53a63f555e559390af55`。本副本等待所有者确认后才可对外分享；包含真实 React 工作台、Express 服务和测试，**不是仅有工具的 SDK，也不是完整线上服务或可直接部署生产的项目**，未改变原有权利或开源许可。
+准备日期：**2026-10-08**，审阅包 **修订 2**。版本 **0.9.16**，源快照 `07eefe8828e3215ea53694feff854c1ac9c66c4d`，产品审阅基线 `4fb1603124bdba4a0edc53a63f555e559390af55`。本精选审阅副本已于 **2026-10-08** 经所有者批准公开；包含真实 React 工作台、Express 服务和测试，**不是仅有工具的 SDK，也不是完整线上服务或可直接部署生产的项目**，未改变原有权利或开源许可。
 
 运行需要 Node.js 22.12+ 与 npm。安装需要访问包仓库；本地演示不需要生产凭据、真实邮箱、钱包、Docker 或 Cloudflare 账号：
 
@@ -25,4 +25,4 @@ TapeOut 提供协议/合约、DeWeb 容器及芯片权限，TapeKit 提供原生
 
 最早保留的产品/构建记录为 **2026-09-25**；**10 月 1 日 UTC 的 Git 导入已是 0.9.7**。确切最初起点及 9 月 14 日前基线未确认，不能宣称所有功能均在评审窗口内新建。无独立真人测试或客户增长证据。
 
-完整范围见 [SCOPE.md](SCOPE.md)，贡献时间见 [CONTRIBUTIONS.md](CONTRIBUTIONS.md)，演示见 [DEMO.md](DEMO.md)，验证见 [VALIDATION.md](VALIDATION.md)，权利与归属见 [NOTICE.md](NOTICE.md)。`EXPORT-SCOPE.json` 列出明确源文件及哈希，`MANIFEST.json` 列出交付内容；`npm run verify:manifest` 核对完整性，不是原创性证明或第三方审计。
+完整范围见 [SCOPE.md](SCOPE.md)，贡献时间见 [CONTRIBUTIONS.md](CONTRIBUTIONS.md)，演示见 [DEMO.md](DEMO.md)，验证见 [VALIDATION.md](VALIDATION.md)，权利与归属见 [NOTICE.md](NOTICE.md)。`EXPORT-SCOPE.json` 列出明确源文件及哈希，`MANIFEST.json` 列出交付内容；请在干净的导出目录（例如解压 GitHub Download ZIP 或 `git archive`）中、安装依赖或运行应用/测试之前执行 `npm run verify:manifest`。不要在含 `.git` 的克隆目录或有运行时产物的目录中执行。此检查核对完整性，不是原创性证明或第三方审计。
